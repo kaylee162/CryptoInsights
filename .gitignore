@@ -1,5 +1,26 @@
+# ============================
+# 📦 Node / React / Vite / Express
+# ============================
+
+# Node modules
+node_modules/
+backend/node_modules/
+
+# Build output
+dist/
+dist-ssr/
+build/
+
+# Vite cache
+.vite/
+
+# Local environment files
+.env
+.env.local
+.env.*.local
+
 # Logs
-logs
+logs/
 *.log
 npm-debug.log*
 yarn-debug.log*
@@ -7,18 +28,54 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+# Temporary files
+*.tmp
+*.temp
 
-# Editor directories and files
+# ============================
+# 🖥️ Editors / OS files
+# ============================
+
+# VSCode
 .vscode/*
 !.vscode/extensions.json
-.idea
+
+# IntelliJ / WebStorm
+.idea/
+
+# macOS
 .DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ============================
+# ⚙️ Project-specific ignores
+# ============================
+
+# Backend
+backend/dist/
+backend/.env
+
+# Coverage / Testing
+coverage/
+*.lcov
+
+# Local server data
+*.pid
+*.seed
+*.pid.lock
+
+# ============================
+# 🔧 Misc
+# ============================
+
+# Output from npm pack
+*.tgz
+
+# Local build artifacts
+*.local
+*.cache
+.cache/
